@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import com.cucumber.listener.Reporter;
+
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -57,6 +59,8 @@ public class Steps {
 		try {
 
 			// Trip Details Page
+			
+			Reporter.addScreenCaptureFromPath(System.getProperty("user.dir") + "\\screenshots");
 
 			driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 
