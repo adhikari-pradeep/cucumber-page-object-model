@@ -1,6 +1,6 @@
-# java-cucumber-example
+# Cucumber Page Objects Model
 
-A sample project for Cucumber and/or Selenium tests.
+A sample project for Cucumber - Selenium - Page Objects Model.
 
 # Instructions
 
@@ -15,8 +15,6 @@ Svn:
 ```
 $ svn co https://github.com/testdouble/java-cucumber-example
 ```
-
-Or download a ZIP of master [manually](https://github.com/testdouble/java-cucumber-example/archive/master.zip) and expand the contents someplace on your system
 
 ## Prerequisites
 
@@ -67,14 +65,6 @@ Let's look at some things you can do with `cucumber.options`. Try this:
     -Dcucumber.options="--help"
 
 That should list all the available options.
-
-*IMPORTANT*
-
-When you override options with `-Dcucumber.options`, you will completely override whatever options are hard-coded in
-your `@CucumberOptions` or in the script calling `cucumber.api.cli.Main`. There is one exception to this rule, and that
-is the `--plugin` option. This will not _override_, but _add_ a plugin. The reason for this is to make it easier
-for 3rd party tools (such as [Cucumber Pro](https://cucumber.pro/)) to automatically configure additional plugins by appending arguments to a `cucumber.properties`
-file.
 
 ### Run a subset of Features or Scenarios
 
